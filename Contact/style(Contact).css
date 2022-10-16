@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+}
+/*aligns all the items in the center and displays a background image*/
+body{
+    min-height: 100vh;
+    background: url("../Images/pexels-josh-sorenson-1714205.jpg") no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+    flex: 1; 
+
+}
+/*displays h2(Contact Me) in color white, displays it in the center and text-transform changes the text to uppercase*/
+.contact-form h2{
+    color: white;
+    text-align:center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/*displays the text box in a black color with opacity which makes it transparent*/
+.contact-form .text-box{
+    background: black;
+    color: white;
+    border: none;
+    width: calc(50%-10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px; 
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+
+}
+
+.contact-form textarea{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px; 
+    font-size: 15px;
+    min-height: 200px; 
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px; 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px; 
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+    float: right;
+    background: 0f9508;
+    color: black;
+    border: none;
+    width : 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    border-radius: 5px;
+}
+/*when the cursor is placed at send button it appears in a blue color*/
+.contact-form .send-btn:hover{
+    background: skyblue ;
+
+}
+
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction: column;
+
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box{
+        width: 100%
+    }
+}
+

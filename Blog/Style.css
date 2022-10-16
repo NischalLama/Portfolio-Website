@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+}
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    
+}
+.container .row{
+    width: 85%;
+    margin: auto;
+}
+/*margin:auto displays the text "Impact of Technology in my life" in center*/
+.container .row .heading-section{
+    width:60%;
+    margin: auto;
+}
+.container .row .heading-section h1{
+    padding-top: 115px;
+    font-size: 42px;
+    text-align:center;
+}
+/*displays the text "Technology" in the given color*/
+.container .row .heading-section span{
+    color:rgb(136, 129, 129);
+}
+.container .row .heading-section p{
+    margin-top: 10px;
+    color:white;
+    font-size: 17px;
+    line-height: 1.5;    
+}
+.content-section{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 4px 7px 12px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 7px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 7px 12px 0px rgba(0,0,0,0.75);
+    margin-top: 100px;
+}
+.content-section .card{
+    flex: 1;
+    margin: 40px 20px;
+}
+.content-section .card img{
+    width: 100%;
+    height: auto;
+}
+.content-section .card h4{
+    margin-top: 20px;
+}
+.content-section .card p{
+    font-size: 15px;
+    margin-top: 10px;
+    color:black;
+    line-height: 1.5;
+}
+.card{
+    padding: 20px;
+    
+}

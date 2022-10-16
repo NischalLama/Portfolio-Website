@@ -1,0 +1,28 @@
+/*displays the background image*/
+body{
+    background-image:url("../Images/pexels-adrien-olichon-2387793.jpg");
+}
+/*sets the all the heading color to white and aligns the text at center*/
+h2{
+    color:white;
+    text-align:center;
+
+}
+/*displays the images in column*/
+.container-1{
+    flex-direction:column;
+    align-items:center;  
+}
+/*displays a border around the image and text with box shadow*/
+.container-1 div{
+    border: 1px solid;
+    padding: 1px; 
+    border-width: 3px;
+    background-color:grey;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+    box-shadow: 1px 5px 16px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 5px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 5px 16px 0px rgba(0,0,0,0.75);  
+}
+

@@ -1,0 +1,80 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+
+    
+}
+/*navigation bar color,text*/
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family:'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+    padding: 10px;
+   
+/*logo's color,size,weight in the navigation bar*/
+}
+.navbar .logo a{
+    color : skyblue;
+    font-size: 45px;
+    font-weight: 500;
+}
+/*sets the width and height*/
+.navbar .menu li{
+    display: inline-block;
+}
+/*sets the font size,weight,margin,font style,color of the home,cv,contact,research,blog*/
+.navbar .menu li a{
+    color :white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-right: 35px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+}
+/*sets the width,padding and margin of the logo and the home,contact,blog,cv and research*/
+.max-width{
+    max-width: 1800px;
+    padding: 30px;
+    margin: auto;
+}
+/*displays the home,cv,research,blog and contact on the right side*/
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+/*display the image in the background and sets the font style*/
+.home{
+    display: flex;
+    background: url("../Images/pexels-cátia-matos-1072179.jpg") no-repeat center;
+    height: 100vh;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Mate SC', serif;
+
+}
+/*margin-right aligns text1,text2,text3 on the middle*/
+.home .max-width{ 
+    margin-right: 10;
+}
+/*sets the text1(Hello) font size and font weight*/
+.home .content .text1{
+    font-size: 100px;
+    font-weight: 500; 
+    color:skyblue;  
+}
+/*sets the text2(my name is Nischal Lama) font size*/
+.home .content .text2{
+    font-size: 30px;
+}
+/*sets the text3(and Welcome to my Website) font size*/
+.home .content .text3{
+    font-size:30px;
+}
